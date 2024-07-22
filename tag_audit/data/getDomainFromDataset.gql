@@ -1,0 +1,14 @@
+query getDataset($urn: String!) {
+  dataset(urn: $urn) {
+     domain {
+      domain {
+        urn
+        properties{
+          name
+          description
+        }
+      }
+    }
+  }
+}
+
